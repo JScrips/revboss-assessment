@@ -9,12 +9,12 @@ const AddAvailability = ({ newEvent, setNewEvent, handleAddEvent, setShowAddAvai
   }
 
   return (
-    <div className="bg-orange-600 p-16 rounded-2xl">
+    <div className="bg-orange-600 p-16 rounded-2xl w-5/12 xl:w-fit">
       <h2 className="text-center mb-8 text-white text-2xl font-medium tracking-wide">
         {' '}
         Please Select Availability
       </h2>
-      <div className="flex gap-6 items-center">
+      <div className="flex gap-6 items-center flex-col xl:flex-row ">
         <input
           type="text"
           placeholder="Add Title"

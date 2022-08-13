@@ -73,7 +73,7 @@ const CalendarComponent = () => {
           ''
         )}
 
-        <div className="flex justify-center gap-10">
+        <div className="flex justify-center gap-10 mb-10">
           {showAddAvail ? (
             ''
           ) : (
