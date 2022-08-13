@@ -27,12 +27,18 @@ const AddAvailability = ({ newEvent, setNewEvent, handleAddEvent, setShowAddAvai
           selected={newEvent.start}
           onChange={start => setNewEvent({ ...newEvent, start })}
           className="p-1 border border-black text-orange-600 placeholder-orange-600 rounded-lg focus:ring-orange-600 focus:ring-1 focus:outline-none focus:border-orange-600"
+          filterDate={date => date.getDay() !== 6 && date.getDay() !== 0}
+          isClearable
+          withPortal
         />
         <Datepicker
           placeholderText="End Date"
           selected={newEvent.end}
           onChange={end => setNewEvent({ ...newEvent, end })}
           className="p-1 border border-black text-orange-600 placeholder-orange-600 rounded-lg focus:ring-orange-600 focus:ring-1 focus:outline-none focus:border-orange-600"
+          isClearable
+          filterDate={date => date.getDay() !== 6 && date.getDay() !== 0}
+          withPortal
         />
         <select
           onChange={e => convertDate(newEvent, e.target.value, 'start')}

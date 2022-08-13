@@ -51,6 +51,7 @@ const CalendarComponent = () => {
   return (
     <div className="">
       <h1 className="text-5xl text-center mt-20"> Calendar </h1>
+
       <Calendar
         localizer={localizer}
         events={allEvents}
